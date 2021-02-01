@@ -6,7 +6,7 @@ use std::str::FromStr;
 use bytes::Bytes;
 
 use super::{ErrorKind, InvalidUri};
-use crate::byte_str::ByteStr;
+use crate::byte_str::{ByteStr, ByteStrLike};
 
 /// Represents the scheme component of a URI
 #[derive(Clone)]
@@ -61,7 +61,7 @@ impl Scheme {
         match self.inner {
             Standard(Http) => "http",
             Standard(Https) => "https",
-            Other(ref v) => &v[..],
+            Other(ref v) => v.as_str(),
             None => unreachable!(),
         }
     }

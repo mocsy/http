@@ -22,7 +22,7 @@
 //! assert_eq!(uri.path(), "/install.html");
 //! ```
 
-use crate::byte_str::ByteStr;
+use crate::byte_str::{ByteStr, ByteStrLike};
 use std::convert::TryFrom;
 
 use bytes::Bytes;

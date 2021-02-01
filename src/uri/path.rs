@@ -5,7 +5,7 @@ use std::{cmp, fmt, str};
 use bytes::Bytes;
 
 use super::{ErrorKind, InvalidUri};
-use crate::byte_str::ByteStr;
+use crate::byte_str::{ByteStr, ByteStrLike};
 
 /// Represents the path component of a URI
 #[derive(Clone)]
@@ -176,9 +176,9 @@ impl PathAndQuery {
     #[inline]
     pub fn path(&self) -> &str {
         let ret = if self.query == NONE {
-            &self.data[..]
+            &self.data.as_str()
         } else {
-            &self.data[..self.query as usize]
+            &self.data.as_str()[..self.query as usize]
         };
 
         if ret.is_empty() {
@@ -228,7 +228,7 @@ impl PathAndQuery {
             None
         } else {
             let i = self.query + 1;
-            Some(&self.data[i as usize..])
+            Some(&self.data.as_str()[i as usize..])
         }
     }
 
@@ -255,7 +255,7 @@ impl PathAndQuery {
     /// ```
     #[inline]
     pub fn as_str(&self) -> &str {
-        let ret = &self.data[..];
+        let ret = &self.data.as_str();
         if ret.is_empty() {
             return "/";
         }

@@ -1,4 +1,4 @@
-use crate::byte_str::ByteStr;
+use crate::byte_str::{ByteStr, ByteStrLike};
 use bytes::{Bytes, BytesMut};
 
 use std::borrow::Borrow;
@@ -1797,7 +1797,7 @@ impl HeaderName {
     pub fn as_str(&self) -> &str {
         match self.inner {
             Repr::Standard(v) => v.as_str(),
-            Repr::Custom(ref v) => &*v.0,
+            Repr::Custom(ref v) => v.0.as_str(),
         }
     }
 
@@ -1872,7 +1872,8 @@ where
 impl From<Custom> for Bytes {
     #[inline]
     fn from(Custom(inner): Custom) -> Bytes {
-        Bytes::from(inner)
+        let b = Bytes::copy_from_slice(inner.as_str().as_bytes());
+        b
     }
 }
 

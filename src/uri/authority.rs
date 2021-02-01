@@ -6,7 +6,7 @@ use std::{cmp, fmt, str};
 use bytes::Bytes;
 
 use super::{ErrorKind, InvalidUri, Port, URI_CHARS};
-use crate::byte_str::ByteStr;
+use crate::byte_str::{ByteStr, ByteStrLike};
 
 /// Represents the authority component of a URI.
 #[derive(Clone)]
@@ -255,7 +255,7 @@ impl Authority {
     /// Return a str representation of the authority
     #[inline]
     pub fn as_str(&self) -> &str {
-        &self.data[..]
+        &self.data.as_str()
     }
 }
 
@@ -288,7 +288,7 @@ impl Eq for Authority {}
 /// ```
 impl PartialEq<str> for Authority {
     fn eq(&self, other: &str) -> bool {
-        self.data.eq_ignore_ascii_case(other)
+        self.as_str().eq_ignore_ascii_case(other)
     }
 }
 
@@ -306,13 +306,13 @@ impl<'a> PartialEq<Authority> for &'a str {
 
 impl<'a> PartialEq<&'a str> for Authority {
     fn eq(&self, other: &&'a str) -> bool {
-        self.data.eq_ignore_ascii_case(other)
+        self.as_str().eq_ignore_ascii_case(*other)
     }
 }
 
 impl PartialEq<String> for Authority {
     fn eq(&self, other: &String) -> bool {
-        self.data.eq_ignore_ascii_case(other.as_str())
+        self.as_str().eq_ignore_ascii_case(other.as_str())
     }
 }
 
