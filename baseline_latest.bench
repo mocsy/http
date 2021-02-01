@@ -1,0 +1,269 @@
+
+running 115 tests
+test error::tests::inner_error_is_invalid_status_code ... ignored
+test extensions::test_extensions ... ignored
+test header::map::skip_duplicates_during_key_iteration ... ignored
+test header::map::test_bounds ... ignored
+test header::name::test_parse_standard_headers ... ignored
+test header::name::test_standard_headers_into_bytes ... ignored
+test header::name::tests::test_all_tokens ... ignored
+test header::name::tests::test_bounds ... ignored
+test header::name::tests::test_eq_hdr_name ... ignored
+test header::name::tests::test_from_hdr_name ... ignored
+test header::name::tests::test_from_static_custom_long ... ignored
+test header::name::tests::test_from_static_custom_long_symbol ... ignored
+test header::name::tests::test_from_static_custom_long_uppercase ... ignored
+test header::name::tests::test_from_static_custom_short ... ignored
+test header::name::tests::test_from_static_custom_short_symbol ... ignored
+test header::name::tests::test_from_static_custom_short_uppercase ... ignored
+test header::name::tests::test_from_static_custom_single_char ... ignored
+test header::name::tests::test_from_static_empty ... ignored
+test header::name::tests::test_from_static_std ... ignored
+test header::name::tests::test_from_static_std_symbol ... ignored
+test header::name::tests::test_from_static_std_uppercase ... ignored
+test header::name::tests::test_invalid_name_lengths ... ignored
+test header::name::tests::test_parse_invalid_headers ... ignored
+test header::value::from_header_name_tests::it_can_insert_header_name_as_header_value ... ignored
+test header::value::from_i16 ... ignored
+test header::value::from_i32 ... ignored
+test header::value::from_i64 ... ignored
+test header::value::from_isize ... ignored
+test header::value::from_u16 ... ignored
+test header::value::from_u32 ... ignored
+test header::value::from_u64 ... ignored
+test header::value::from_usize ... ignored
+test header::value::test_debug ... ignored
+test header::value::test_try_from ... ignored
+test header::value::try_from_header_name_tests::it_converts_using_try_from ... ignored
+test method::test::test_extention_method ... ignored
+test method::test::test_invalid_method ... ignored
+test method::test::test_is_idempotent ... ignored
+test method::test::test_method_eq ... ignored
+test request::tests::it_can_map_a_body_from_one_type_to_another ... ignored
+test response::tests::it_can_map_a_body_from_one_type_to_another ... ignored
+test uri::authority::tests::allows_percent_in_ipv6_address ... ignored
+test uri::authority::tests::allows_percent_in_userinfo ... ignored
+test uri::authority::tests::compares_to_self ... ignored
+test uri::authority::tests::compares_with_a_str ... ignored
+test uri::authority::tests::compares_with_a_string ... ignored
+test uri::authority::tests::equal_to_self_of_same_authority ... ignored
+test uri::authority::tests::equates_with_a_str ... ignored
+test uri::authority::tests::equates_with_a_string ... ignored
+test uri::authority::tests::equates_with_a_string_of_a_different_authority ... ignored
+test uri::authority::tests::from_static_equates_with_a_str ... ignored
+test uri::authority::tests::not_equal_to_self_of_different_authority ... ignored
+test uri::authority::tests::not_equal_with_a_str_of_a_different_authority ... ignored
+test uri::authority::tests::parse_empty_string_is_error ... ignored
+test uri::authority::tests::rejects_invalid_use_of_brackets ... ignored
+test uri::authority::tests::rejects_invalid_utf8 ... ignored
+test uri::authority::tests::rejects_percent_in_hostname ... ignored
+test uri::authority::tests::rejects_percent_outside_ipv6_address ... ignored
+test uri::builder::tests::build_from_str ... ignored
+test uri::builder::tests::build_from_string ... ignored
+test uri::builder::tests::build_from_string_ref ... ignored
+test uri::path::tests::compares_to_self ... ignored
+test uri::path::tests::compares_with_a_str ... ignored
+test uri::path::tests::compares_with_a_string ... ignored
+test uri::path::tests::equal_to_self_of_same_path ... ignored
+test uri::path::tests::equates_with_a_str ... ignored
+test uri::path::tests::equates_with_a_string ... ignored
+test uri::path::tests::ignores_invalid_percent_encodings ... ignored
+test uri::path::tests::ignores_valid_percent_encodings ... ignored
+test uri::path::tests::not_equal_to_self_of_different_path ... ignored
+test uri::path::tests::not_equal_with_a_str_of_a_different_path ... ignored
+test uri::path::tests::not_equal_with_a_string_of_a_different_path ... ignored
+test uri::port::tests::partialeq_port ... ignored
+test uri::port::tests::partialeq_port_different_reprs ... ignored
+test uri::port::tests::partialeq_u16 ... ignored
+test uri::port::tests::u16_from_port ... ignored
+test uri::scheme::test::invalid_scheme_is_error ... ignored
+test uri::scheme::test::scheme_eq_to_str ... ignored
+test uri::tests::test_authority_uri_parts_round_trip ... ignored
+test uri::tests::test_char_table ... ignored
+test uri::tests::test_ipv6 ... ignored
+test uri::tests::test_ipv6_shorthand ... ignored
+test uri::tests::test_ipv6_shorthand2 ... ignored
+test uri::tests::test_ipv6_shorthand3 ... ignored
+test uri::tests::test_ipv6_with_port ... ignored
+test uri::tests::test_max_length_scheme ... ignored
+test uri::tests::test_max_uri_len ... ignored
+test uri::tests::test_overflowing_scheme ... ignored
+test uri::tests::test_partial_eq_path_with_terminating_questionmark ... ignored
+test uri::tests::test_path_permissive ... ignored
+test uri::tests::test_percentage_encoded_path ... ignored
+test uri::tests::test_query_permissive ... ignored
+test uri::tests::test_uri_authority_only_one_character_issue_197 ... ignored
+test uri::tests::test_uri_parse_absolute_form ... ignored
+test uri::tests::test_uri_parse_absolute_form_with_empty_path_and_fragment_with_questionmark ... ignored
+test uri::tests::test_uri_parse_absolute_form_with_empty_path_and_fragment_with_slash ... ignored
+test uri::tests::test_uri_parse_absolute_form_with_empty_path_and_nonempty_query ... ignored
+test uri::tests::test_uri_parse_absolute_form_without_path ... ignored
+test uri::tests::test_uri_parse_absolute_with_default_port_http ... ignored
+test uri::tests::test_uri_parse_absolute_with_default_port_https ... ignored
+test uri::tests::test_uri_parse_asterisk_form ... ignored
+test uri::tests::test_uri_parse_authority_form ... ignored
+test uri::tests::test_uri_parse_authority_no_port ... ignored
+test uri::tests::test_uri_parse_error ... ignored
+test uri::tests::test_uri_parse_fragment_questionmark ... ignored
+test uri::tests::test_uri_parse_long_host_with_no_scheme ... ignored
+test uri::tests::test_uri_parse_long_host_with_port_and_no_scheme ... ignored
+test uri::tests::test_uri_parse_path_and_query ... ignored
+test uri::tests::test_uri_parse_path_with_terminating_questionmark ... ignored
+test uri::tests::test_uri_to_path_and_query ... ignored
+test uri::tests::test_userinfo1 ... ignored
+test uri::tests::test_userinfo2 ... ignored
+test uri::tests::test_userinfo3 ... ignored
+test uri::tests::test_userinfo_pass_with_port ... ignored
+test uri::tests::test_userinfo_with_port ... ignored
+
+test result: ok. 0 passed; 0 failed; 115 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 112 tests
+test basic::get_100_std::header_map                          ... bench:         538 ns/iter (+/- 5)
+test basic::get_100_std::order_map_fnv                       ... bench:         695 ns/iter (+/- 6)
+test basic::get_100_std::order_map_seahash                   ... bench:       1,464 ns/iter (+/- 17)
+test basic::get_100_std::vec_map                             ... bench:       1,871 ns/iter (+/- 56)
+test basic::get_10_custom_short::header_map                  ... bench:         131 ns/iter (+/- 1)
+test basic::get_10_custom_short::order_map_fnv               ... bench:         151 ns/iter (+/- 1)
+test basic::get_10_custom_short::order_map_seahash           ... bench:         341 ns/iter (+/- 2)
+test basic::get_10_custom_short::vec_map                     ... bench:         233 ns/iter (+/- 6)
+test basic::get_10_of_20_std::header_map                     ... bench:          48 ns/iter (+/- 0)
+test basic::get_10_of_20_std::order_map_fnv                  ... bench:          54 ns/iter (+/- 0)
+test basic::get_10_of_20_std::order_map_seahash              ... bench:         138 ns/iter (+/- 3)
+test basic::get_10_of_20_std::vec_map                        ... bench:          43 ns/iter (+/- 0)
+test basic::hn_hdrs_set_11_get_with_miss::header_map         ... bench:         563 ns/iter (+/- 4)
+test basic::hn_hdrs_set_11_get_with_miss::order_map_fnv      ... bench:         607 ns/iter (+/- 9)
+test basic::hn_hdrs_set_11_get_with_miss::order_map_seahash  ... bench:       1,014 ns/iter (+/- 11)
+test basic::hn_hdrs_set_11_get_with_miss::vec_map            ... bench:         380 ns/iter (+/- 21)
+test basic::hn_hdrs_set_8_get_many::header_map               ... bench:         417 ns/iter (+/- 5)
+test basic::hn_hdrs_set_8_get_many::order_map_fnv            ... bench:         508 ns/iter (+/- 5)
+test basic::hn_hdrs_set_8_get_many::order_map_seahash        ... bench:         824 ns/iter (+/- 5)
+test basic::hn_hdrs_set_8_get_many::vec_map                  ... bench:         255 ns/iter (+/- 18)
+test basic::hn_hdrs_set_8_get_miss::header_map               ... bench:         276 ns/iter (+/- 10)
+test basic::hn_hdrs_set_8_get_miss::order_map_fnv            ... bench:         393 ns/iter (+/- 19)
+test basic::hn_hdrs_set_8_get_miss::order_map_seahash        ... bench:         500 ns/iter (+/- 6)
+test basic::hn_hdrs_set_8_get_miss::vec_map                  ... bench:         132 ns/iter (+/- 2)
+test basic::insert_100_custom_headers::header_map            ... bench:       5,701 ns/iter (+/- 36)
+test basic::insert_100_custom_headers::order_map_fnv         ... bench:       8,812 ns/iter (+/- 38)
+test basic::insert_100_custom_headers::order_map_seahash     ... bench:       7,485 ns/iter (+/- 33)
+test basic::insert_100_custom_headers::vec_map               ... bench:      18,945 ns/iter (+/- 277)
+test basic::insert_4_std_get_30::header_map                  ... bench:         254 ns/iter (+/- 9)
+test basic::insert_4_std_get_30::order_map_fnv               ... bench:         402 ns/iter (+/- 4)
+test basic::insert_4_std_get_30::order_map_seahash           ... bench:         654 ns/iter (+/- 6)
+test basic::insert_4_std_get_30::vec_map                     ... bench:         115 ns/iter (+/- 2)
+test basic::insert_500_custom_headers::header_map            ... bench:      29,277 ns/iter (+/- 79)
+test basic::insert_500_custom_headers::order_map_fnv         ... bench:      32,286 ns/iter (+/- 150)
+test basic::insert_500_custom_headers::order_map_seahash     ... bench:      38,567 ns/iter (+/- 125)
+test basic::insert_500_custom_headers::vec_map               ... bench:     406,077 ns/iter (+/- 3,458)
+test basic::insert_6_std_get_6::header_map                   ... bench:         169 ns/iter (+/- 4)
+test basic::insert_6_std_get_6::order_map_fnv                ... bench:         305 ns/iter (+/- 3)
+test basic::insert_6_std_get_6::order_map_seahash            ... bench:         401 ns/iter (+/- 8)
+test basic::insert_6_std_get_6::vec_map                      ... bench:         141 ns/iter (+/- 1)
+test basic::insert_79_custom_std_headers::header_map         ... bench:       4,847 ns/iter (+/- 14)
+test basic::insert_79_custom_std_headers::order_map_fnv      ... bench:       3,953 ns/iter (+/- 25)
+test basic::insert_79_custom_std_headers::order_map_seahash  ... bench:       6,035 ns/iter (+/- 29)
+test basic::insert_79_custom_std_headers::vec_map            ... bench:       8,037 ns/iter (+/- 59)
+test basic::insert_all_std_headers::header_map               ... bench:       2,119 ns/iter (+/- 23)
+test basic::insert_all_std_headers::order_map_fnv            ... bench:       2,939 ns/iter (+/- 17)
+test basic::insert_all_std_headers::order_map_seahash        ... bench:       3,577 ns/iter (+/- 36)
+test basic::insert_all_std_headers::vec_map                  ... bench:       2,397 ns/iter (+/- 7)
+test basic::insert_one_100_char_header::header_map           ... bench:         142 ns/iter (+/- 0)
+test basic::insert_one_100_char_header::order_map_fnv        ... bench:         147 ns/iter (+/- 2)
+test basic::insert_one_100_char_header::order_map_seahash    ... bench:         100 ns/iter (+/- 1)
+test basic::insert_one_100_char_header::vec_map              ... bench:          37 ns/iter (+/- 5)
+test basic::insert_one_15_char_header::header_map            ... bench:          65 ns/iter (+/- 0)
+test basic::insert_one_15_char_header::order_map_fnv         ... bench:          68 ns/iter (+/- 1)
+test basic::insert_one_15_char_header::order_map_seahash     ... bench:          93 ns/iter (+/- 1)
+test basic::insert_one_15_char_header::vec_map               ... bench:          35 ns/iter (+/- 6)
+test basic::insert_one_25_char_header::header_map            ... bench:          74 ns/iter (+/- 0)
+test basic::insert_one_25_char_header::order_map_fnv         ... bench:          79 ns/iter (+/- 2)
+test basic::insert_one_25_char_header::order_map_seahash     ... bench:          94 ns/iter (+/- 2)
+test basic::insert_one_25_char_header::vec_map               ... bench:          39 ns/iter (+/- 6)
+test basic::insert_one_50_char_header::header_map            ... bench:          96 ns/iter (+/- 0)
+test basic::insert_one_50_char_header::order_map_fnv         ... bench:         100 ns/iter (+/- 3)
+test basic::insert_one_50_char_header::order_map_seahash     ... bench:          96 ns/iter (+/- 1)
+test basic::insert_one_50_char_header::vec_map               ... bench:          35 ns/iter (+/- 5)
+test basic::new_insert_get_host::header_map                  ... bench:          45 ns/iter (+/- 2)
+test basic::new_insert_get_host::order_map_fnv               ... bench:          56 ns/iter (+/- 1)
+test basic::new_insert_get_host::order_map_seahash           ... bench:          83 ns/iter (+/- 0)
+test basic::new_insert_get_host::vec_map                     ... bench:          17 ns/iter (+/- 0)
+test basic::set_10_get_1_custom_long::header_map             ... bench:         756 ns/iter (+/- 2)
+test basic::set_10_get_1_custom_long::order_map_fnv          ... bench:         980 ns/iter (+/- 8)
+test basic::set_10_get_1_custom_long::order_map_seahash      ... bench:         866 ns/iter (+/- 8)
+test basic::set_10_get_1_custom_long::vec_map                ... bench:         531 ns/iter (+/- 9)
+test basic::set_10_get_1_custom_med::header_map              ... bench:         614 ns/iter (+/- 2)
+test basic::set_10_get_1_custom_med::order_map_fnv           ... bench:         838 ns/iter (+/- 6)
+test basic::set_10_get_1_custom_med::order_map_seahash       ... bench:         837 ns/iter (+/- 8)
+test basic::set_10_get_1_custom_med::vec_map                 ... bench:         485 ns/iter (+/- 6)
+test basic::set_10_get_1_custom_short::header_map            ... bench:         561 ns/iter (+/- 3)
+test basic::set_10_get_1_custom_short::order_map_fnv         ... bench:         797 ns/iter (+/- 5)
+test basic::set_10_get_1_custom_short::order_map_seahash     ... bench:         837 ns/iter (+/- 8)
+test basic::set_10_get_1_custom_short::vec_map               ... bench:         534 ns/iter (+/- 6)
+test basic::set_10_get_1_custom_very_long::header_map        ... bench:         982 ns/iter (+/- 3)
+test basic::set_10_get_1_custom_very_long::order_map_fnv     ... bench:       1,199 ns/iter (+/- 6)
+test basic::set_10_get_1_custom_very_long::order_map_seahash ... bench:         885 ns/iter (+/- 9)
+test basic::set_10_get_1_custom_very_long::vec_map           ... bench:         529 ns/iter (+/- 14)
+test basic::set_10_get_1_std::header_map                     ... bench:         332 ns/iter (+/- 5)
+test basic::set_10_get_1_std::order_map_fnv                  ... bench:         489 ns/iter (+/- 3)
+test basic::set_10_get_1_std::order_map_seahash              ... bench:         570 ns/iter (+/- 7)
+test basic::set_10_get_1_std::vec_map                        ... bench:         217 ns/iter (+/- 8)
+test basic::set_20_get_1_custom_long::header_map             ... bench:       1,537 ns/iter (+/- 10)
+test basic::set_20_get_1_custom_long::order_map_fnv          ... bench:       1,749 ns/iter (+/- 12)
+test basic::set_20_get_1_custom_long::order_map_seahash      ... bench:       1,634 ns/iter (+/- 10)
+test basic::set_20_get_1_custom_long::vec_map                ... bench:       1,155 ns/iter (+/- 13)
+test basic::set_20_get_1_custom_med::header_map              ... bench:       1,228 ns/iter (+/- 11)
+test basic::set_20_get_1_custom_med::order_map_fnv           ... bench:       1,457 ns/iter (+/- 10)
+test basic::set_20_get_1_custom_med::order_map_seahash       ... bench:       1,609 ns/iter (+/- 13)
+test basic::set_20_get_1_custom_med::vec_map                 ... bench:       1,086 ns/iter (+/- 19)
+test basic::set_20_get_1_custom_short::header_map            ... bench:       1,115 ns/iter (+/- 8)
+test basic::set_20_get_1_custom_short::order_map_fnv         ... bench:       1,379 ns/iter (+/- 10)
+test basic::set_20_get_1_custom_short::order_map_seahash     ... bench:       1,581 ns/iter (+/- 13)
+test basic::set_20_get_1_custom_short::vec_map               ... bench:       1,136 ns/iter (+/- 18)
+test basic::set_20_get_1_custom_very_long::header_map        ... bench:       1,945 ns/iter (+/- 7)
+test basic::set_20_get_1_custom_very_long::order_map_fnv     ... bench:       2,189 ns/iter (+/- 13)
+test basic::set_20_get_1_custom_very_long::order_map_seahash ... bench:       1,710 ns/iter (+/- 10)
+test basic::set_20_get_1_custom_very_long::vec_map           ... bench:       1,145 ns/iter (+/- 10)
+test basic::set_20_get_1_std::header_map                     ... bench:         620 ns/iter (+/- 10)
+test basic::set_20_get_1_std::order_map_fnv                  ... bench:         856 ns/iter (+/- 5)
+test basic::set_20_get_1_std::order_map_seahash              ... bench:       1,031 ns/iter (+/- 9)
+test basic::set_20_get_1_std::vec_map                        ... bench:         375 ns/iter (+/- 2)
+test basic::set_8_get_1_std::header_map                      ... bench:         266 ns/iter (+/- 7)
+test basic::set_8_get_1_std::order_map_fnv                   ... bench:         428 ns/iter (+/- 1)
+test basic::set_8_get_1_std::order_map_seahash               ... bench:         488 ns/iter (+/- 4)
+test basic::set_8_get_1_std::vec_map                         ... bench:         135 ns/iter (+/- 4)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 112 measured; 0 filtered out; finished in 38.99s
+
+
+running 3 tests
+test header_name_bad     ... bench:          10 ns/iter (+/- 0)
+test header_name_easy    ... bench:          14 ns/iter (+/- 0)
+test header_name_various ... bench:       2,879 ns/iter (+/- 19)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 3 measured; 0 filtered out; finished in 0.91s
+
+
+running 4 tests
+test from_shared_long            ... bench:          93 ns/iter (+/- 0) = 1215 MB/s
+test from_shared_short           ... bench:          22 ns/iter (+/- 0) = 409 MB/s
+test from_shared_unchecked_long  ... bench:          12 ns/iter (+/- 0) = 9416 MB/s
+test from_shared_unchecked_short ... bench:          12 ns/iter (+/- 0) = 750 MB/s
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 4 measured; 0 filtered out; finished in 0.77s
+
+
+running 2 tests
+test method_easy    ... bench:           2 ns/iter (+/- 0)
+test method_various ... bench:          73 ns/iter (+/- 2)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 2 measured; 0 filtered out; finished in 0.80s
+
+
+running 3 tests
+test uri_parse_relative_medium ... bench:          79 ns/iter (+/- 3) = 759 MB/s
+test uri_parse_relative_query  ... bench:         107 ns/iter (+/- 3) = 785 MB/s
+test uri_parse_slash           ... bench:          19 ns/iter (+/- 0) = 52 MB/s
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 3 measured; 0 filtered out; finished in 0.72s
+
